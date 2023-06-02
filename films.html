@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Films | Hélio Ribeiro</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/films.css">
+    <link rel="shortcut icon" href="/assets/millennium-falcon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a href="/films.html">
+            <div class="logo">
+                <img src="/assets/star-wars-logo.png" alt="logo" class="logo-img"/>
+                <span class="logo-text">Films</span>
+            </div>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="/index.html">Personagens</a></li>
+                <li><a href="/films.html">Filmes</a></li>
+            </ul>              
+        </nav>
+
+        <div class="social-media">
+            <a href="https://www.instagram.com/helio_777/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/helio.junior.7967" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://github.com/helio020" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/h%C3%A9lio-ribeiro-04b44b15b/" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <h2>Conheca todos os filmes de Star Wars em um so lugar</h2>
+        
+        <div class="main-content" id="main-content"></div>
+
+        <div class="modal" id="modal" onclick="hideModal()">
+            <div class="modal-content" id="modal-content"></div>
+        </div>
+
+        <div class="buttons">
+            <button id="back-button" disabled>Voltar</button>
+            <button id="next-button" disabled>Próximo</button>
+        </div>
+    </div>
+
+    <footer>
+        <p class="footer-logo">Star Wars Films</p>
+        <p class="copyright">Desenvolvido por &copy; Hélio Ribeiro</p>
+    </footer>
+    
+    <script src="https://kit.fontawesome.com/98891c3f2a.js" crossorigin="anonymous"></script>
+    <script src="./films.js"></script>
+</body>
+</html>
