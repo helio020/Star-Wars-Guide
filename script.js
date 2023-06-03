@@ -5,7 +5,7 @@ window.onload = async () => {
         await loadCharacters(currentPageUrl)
     } catch (error) {
         console.log(error)
-        alert ('Erro ao carregar os cards')
+        alert ('Error loading cards')
     }
 
     const nextButton = document.getElementById('next-button')
@@ -54,23 +54,23 @@ async function loadCharacters(url) {
 
                 const name = document.createElement("span")
                 name.className = "character-details"
-                name.innerText = `Nome: ${character.name}`
+                name.innerText = `Name: ${character.name}`
 
                 const characterHeight = document.createElement("span")
                 characterHeight.className = "character-details"
-                characterHeight.innerText = `Altura: ${convertHeight(character.height)}`
+                characterHeight.innerText = `Height: ${convertHeight(character.height)}`
 
                 const mass = document.createElement("span")
                 mass.className = "character-details"
-                mass.innerText = `Peso: ${convertMass(character.mass)}`
+                mass.innerText = `Mass: ${convertMass(character.mass)}`
 
                 const eyeColor = document.createElement("span")
                 eyeColor.className = "character-details"
-                eyeColor.innerText = `Cor dos olhos: ${convertEyeColor(character.eye_color)}`
+                eyeColor.innerText = `Eye color: ${character.eye_color}`
 
                 const birthYear = document.createElement("span")
                 birthYear.className = "character-details"
-                birthYear.innerText = `Nascimento: ${convertBirthYear(character.birth_year)}`
+                birthYear.innerText = `Birth year: ${character.birth_year}`
 
                 modalContent.appendChild(characterImage)
                 modalContent.appendChild(name)
@@ -94,7 +94,7 @@ async function loadCharacters(url) {
         currentPageUrl = url
         
     } catch (error) {
-        alert('Erro ao carregar os personagens')
+        alert('Error loading characters')
         console.log(error)
     }
 }
@@ -110,7 +110,7 @@ async function loadNextPage() {
 
     } catch (error) {
         console.log(error)
-        alert('Erro ao carregar a próxima página')
+        alert('Error loading next page')
     }
 }
 
@@ -125,7 +125,7 @@ async function loadPreviousPage() {
 
     } catch (error) {
         console.log(error)
-        alert('Erro ao carregar a página anterior')
+        alert('Error loading previous page')
     }
 }
 
@@ -134,43 +134,10 @@ function hideModal() {
     modal.style.visibility = "hidden"
 }
 
-function convertEyeColor(eyeColor) {
-    const cores = {
-        blue: "azul",
-        brown: "castanho",
-        green: "verde",
-        yellow: "amarelo",
-        black: "preto",
-        pink: "rosa",  
-        red: "vermelho",
-        orange: "laranja",
-        hazel: "avela",
-        unknown: "desconhecida"
-    }
-
-    return cores[eyeColor.toLowerCase()] || eyeColor
-}
-
 function convertHeight(height) {
-    if (height === "unknown") {
-        return "desconhecida"
-    }
-
     return (height / 100).toFixed(2)
 }
 
 function convertMass(mass) {
-    if (mass === "unknown") {
-        return "desconhecido"
-    }
-
     return `${mass} kg`
-}
-
-function convertBirthYear(birthYear) {
-    if (birthYear === "unknown") {
-        return "desconhecido"
-    }
-
-    return birthYear
 }

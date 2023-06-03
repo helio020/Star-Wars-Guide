@@ -5,7 +5,7 @@ window.onload = async () => {
         await loadFilms(currentPageUrl)
     } catch (error) {
         console.log(error)
-        alert ('Erro ao carregar os cards')
+        alert ('Error loading cards')
     }
 }
 
@@ -48,23 +48,23 @@ async function loadFilms(url) {
 
                 const title = document.createElement("span")
                 title.className = "films-details"
-                title.innerText = `Titulo: ${films.title}`
+                title.innerText = `Title: ${films.title}`
 
                 const episode = document.createElement("span")
                 episode.className = "films-details"
-                episode.innerText = `Episodio: ${films.episode_id}`
+                episode.innerText = `Episode: ${films.episode_id}`
 
                 const producer = document.createElement("span")
                 producer.className = "films-details"
-                producer.innerText = `Produtor: ${films.producer}`
+                producer.innerText = `Producer: ${films.producer}`
 
                 const director = document.createElement("span")
                 director.className = "films-details"
-                director.innerText = `Diretor: ${films.director}`
+                director.innerText = `Director: ${films.director}`
 
                 const releaseDate = document.createElement("span")
                 releaseDate.className = "films-details"
-                releaseDate.innerText = `Lancamento: ${films.release_date}`
+                releaseDate.innerText = `Release date: ${films.release_date}`
 
                 modalContent.appendChild(filmsImage)
                 modalContent.appendChild(title)
@@ -80,7 +80,7 @@ async function loadFilms(url) {
         currentPageUrl = url
         
     } catch (error) {
-        alert('Erro ao carregar os filmes')
+        alert('Error loading films')
         console.log(error)
     }
 }

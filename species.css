@@ -1,8 +1,4 @@
-#next-button {
-    visibility: hidden;
-}
-
-.films-name-bg {
+.species-name-bg {
     width: 100%;
     height: 30px;
     background-color: rgba(0, 0, 0, 0.6);
@@ -12,29 +8,24 @@
     border-radius: 10px;
 }
 
-.films-name {
+.species-name {
     font-family: 'Star Wars', sans-serif;
     color: gold;
-    font-size: 0.8rem;
-    text-align: center;
+    font-size: 1rem;
 }
 
-.films-image {
-    width: 200px;
-    height: 200px;
+.species-image {
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     background-position: 50% 10%;
     background-size: cover;
 }
 
-.films-details {
+.species-details {
     font-family: 'Star Wars', sans-serif;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-weight: lighter;
     color: gold;
     text-align: center;
-}
-
-.main-content {
-    padding: 0 20px;
 }
