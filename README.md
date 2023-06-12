@@ -7,6 +7,6 @@ COMO USAR?
 
 2. Para visualizar informações adicionais sobre algum personagem basta clicar em seu card. Para voltar basta clicar em qualquer parte da tela.
 
-Este site está hospedato no **GitHub Pages.** Para acessá-lo [clique aqui](https://rodrigoserrasqueiro.github.io/Star-Wars-Characters/).
+Este site está hospedato no **GitHub Pages.** Para acessá-lo [clique aqui](https://helio020.github.io/Star-Wars-Guide/).
 
 Em caso de ERRO ou BUG, abra uma issue em nosso repositório.
